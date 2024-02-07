@@ -5,11 +5,11 @@ const { check } = require('express-validator');
 const { validarCampos } = require('../middlewares/validar-campos');
 
 const { 
-    usuariosPost, 
+    usuariosPost,
     usuariosGet, 
     getUsuarioById,
     putUsuarios,
-    usuarioDelete} = require('../controllers/user.controller');
+    usuarioDelete} = require('../controllers/usuario.controller');
 const { existenteEmail, esRoleValido, existeUsuarioById } = require('../hellpers/db-validator');
 
 const router = Router();

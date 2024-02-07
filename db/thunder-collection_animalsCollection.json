@@ -1,0 +1,100 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "animalsCollection",
+    "dateExported": "2024-02-07T23:41:10.734Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "3e5101b6-088b-46e5-9b4a-453d539d9418",
+            "colId": "f821b46e-75ff-4131-aed4-109cd904752b",
+            "containerId": "",
+            "name": "get animales",
+            "url": "http://localhost:3000/api/animales/?desde=5&limite=5",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-02-07T22:23:30.864Z",
+            "modified": "2024-02-07T23:40:36.975Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "desde",
+                    "value": "5",
+                    "isPath": false
+                },
+                {
+                    "name": "limite",
+                    "value": "5",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "1f218f22-cdb1-445b-bf98-34ea527ac72a",
+            "colId": "f821b46e-75ff-4131-aed4-109cd904752b",
+            "containerId": "",
+            "name": "pos animales",
+            "url": "http://localhost:3000/api/animales",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-02-07T22:31:11.416Z",
+            "modified": "2024-02-07T22:55:36.843Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"raza\":\"Pastor Aleman\",\n    \"edad\":\"7 años\",\n    \"condicion\":\"Saludable\",\n    \"registro\":\"24/12/2023\",\n    \"sexo\": \"Macho\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "2c89285c-ddca-4165-b7d9-e5c246f76b54",
+            "colId": "f821b46e-75ff-4131-aed4-109cd904752b",
+            "containerId": "",
+            "name": "put mascotas",
+            "url": "http://localhost:3000/api/animales/65c40a476ccd497eb7bcdb62",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2024-02-07T23:08:39.075Z",
+            "modified": "2024-02-07T23:10:08.834Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \n    \"edad\":\"6 años\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "6027cd7c-5a33-465e-a662-4f7a4c5ec078",
+            "colId": "f821b46e-75ff-4131-aed4-109cd904752b",
+            "containerId": "",
+            "name": "delete mascota",
+            "url": "http://localhost:3000/api/animales/65c409be6ccd497eb7bcdb58",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2024-02-07T23:23:26.149Z",
+            "modified": "2024-02-07T23:24:09.803Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "37661d7f-ed05-4987-a46e-27b1d2152374",
+            "colId": "f821b46e-75ff-4131-aed4-109cd904752b",
+            "containerId": "",
+            "name": "get byid",
+            "url": "http://localhost:3000/api/animales/65c409be6ccd497eb7bcdb58",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2024-02-07T23:31:56.356Z",
+            "modified": "2024-02-07T23:32:14.603Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

@@ -1,4 +1,4 @@
-const {Schema, model} = require('mongoose');
+const { Schema, model } = require('mongoose');
 
 const AnimalesSchema = Schema({
     raza:{
@@ -16,18 +16,22 @@ const AnimalesSchema = Schema({
         required: [true, 'Ingresa su condicion']
     },
 
-    Registro:{
+    registro:{
         type: String,
         required: [true, 'Fecha de ingreso al centro']
     },
 
-    Sexo:{
+    sexo:{
         type: String,
         required: [true, 'Macho, hembra']
+    },
+
+    estado:{
+        type: Boolean,
+        default: true
     }
 
-
-})
+});
 
 
 module.exports = model('Animales', AnimalesSchema);
