@@ -3,9 +3,8 @@ const Mascotas = require('../models/animales');
 const {response} = require('express');
 
 const animalesGet = async (req, res = response) => {
+    const query = {estado: null && true && false};
     const {limite, desde} = req.query;
-    const query = {estado: true};
-
 
     const [total, animales] = await Promise.all([
         Mascotas.countDocuments(query),
@@ -32,7 +31,7 @@ const getMascotasById = async (req, res) => {
 
 const putMascotas = async (req, res = response) =>{
     const {id} = req.params;
-    const { _id, raza, edad, condicion, resgistro, sexo, ...resto} = req.body;
+    const { _id, ...resto} = req.body;
 
     const animales = await Mascotas.findByIdAndUpdate(id, resto);
 

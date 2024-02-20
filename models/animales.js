@@ -25,7 +25,6 @@ const AnimalesSchema = Schema({
         type: String,
         required: [true, 'Macho, hembra']
     },
-
     estado:{
         type: Boolean,
         default: true
